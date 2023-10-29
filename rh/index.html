@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       table.tablap, th, td {
+  font-size: larger;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-inline: 700px;
+}
+
+    table.tablab{
+    margin-top: -350px;
+    margin-left: 700px;
+
+}
+    </style>
+    <title>Sistema Recursos Humanos</title>
+    <script src="./js/index.js"></script>
+    <script src="./js/agregarEmp.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+</head>
+<body>
+    <h1>Sistema Recursos Humanos</h1>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6 offset-3">
+                <h1>Buscar Empleado</h1>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-6 offset-3">
+                <div class="form-group">
+                    <label for="input-nombre">Buscar por Nombre</label>
+                    <input type="text" class="form-control" id="input-nombre">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-n" onclick="buscarEmp()">Buscar</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6 offset-3">
+                <h1>Agregar Empleado</h1>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-6 offset-3">
+                
+                <div class="form-group">
+                    <label for="input-name">Nombre</label>
+                    <input type="text" class="form-control" id="input-name"/>
+                </div>
+                <div class="form-group">
+                    <label for="input-apellido">Apellido</label>
+                    <input type="text" class="form-control" id="input-apellido"/>
+                </div>
+                <div class="form-group">
+                    <label for="input-telefono">Telefono</label>
+                    <input type="number" maxlength="10" class="form-control" id="input-telefono" />
+                </div>
+                <div class="form-group">
+                    <label for="input-mail">Correo electrónico</label>
+                    <input type="email" class="form-control" id="input-mail" placeholder="correo@dominio.ext"/>
+                </div>
+                <div class="form-group">
+                    <label for="input-direccion">Direccion</label>
+                    <input type="text" class="form-control" id="input-direccion"/>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-primary" onclick="agregarEmp()">Entrar</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
